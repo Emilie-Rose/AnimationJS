@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Dessiner en programmant</title>
+  <title>Animation sur une page contenant une image</title>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+  
+  <!-- J'ai mis le CSS dans une balise <Style> dans le fichier HTML mais j'aurais pu mettre les blocs dans un fichier CSS (Cf. Stage AXA - Atelier) -->
   <style>
     body {
       margin: 0;
@@ -23,13 +25,20 @@
     /* plan cartésien défini par 2 axes perpendiculaires: l'axe abscisses/ordonnées (x/y) */
     :root {
       touch-action: pan-x pan-y; 
-      height: 100%
+      height: 100%;
     }
   </style>
+
   <script src="lib/p5.min.js"></script>
   <script src="main/bulles.js"></script>
+
+  <!-- On crée un fichier min pour rendre le programme plus rapide, c'est un fichier ou l'on a 
+  supprimé : Les espaces, Les sauts de lignes, Les commentaires et Les séparateurs de bloc pour 
+  mettre tout le fichier Javascript sur une ligne ce qui rend le programme plus rapide a exécuter
+  Pour plus d'info => https://p5js.org/get-started/ 
+  Pour recupere le fichier "p5.min.js" => https://cdn.jsdelivr.net/npm/p5/lib/ (fichier qui permet l'apparition des bulles XD)-->
 </head>
 
-<body></body>
+<!-- <body></body> -->
 
 </html>
